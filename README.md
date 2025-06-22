@@ -11,4 +11,29 @@ Este repositorio incluye una estructura básica de archivos para iniciar el redi
 - Blog
 - Tienda
 
-Los archivos se encuentran dentro de la carpeta `site/` y utilizan HTML sencillo acompañado de un archivo de estilos y uno de scripts. Esta es solo una plantilla inicial para organizar el proyecto.
+El contenido del sitio se ubica en la carpeta `site/`. Para mantener un orden básico se usan subdirectorios para las páginas y los recursos estáticos:
+
+```
+site/
+  index.html
+  pages/              # páginas individuales
+  blog/               # sección de blog
+  tienda/             # sección de tienda online
+  assets/
+    css/
+    js/
+    img/
+```
+
+### Ejecutar localmente
+
+Puedes visualizar el sitio de forma local utilizando el servidor simple de Python:
+
+```bash
+cd site
+python3 -m http.server 8000
+```
+
+Luego abre `http://localhost:8000` en tu navegador.
+
+Esto es solo una plantilla básica para iniciar el proyecto.
